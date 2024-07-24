@@ -1,0 +1,14 @@
+{
+    "name": "emoweb/book-cpt",
+    "autoload": {
+        "psr-4": {
+            "PadiabTheme\\": "includes/"
+        }
+    },
+    "authors": [
+        {
+            "name": "emoweb",
+            "email": "info@emoweb.dev"
+        }
+    ]
+}
