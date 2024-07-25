@@ -1,5 +1,5 @@
 <?php
-use PadiabTheme\Interface_Classes_Init;
+use BookCPT\Interface_Classes_Init;
 
 defined( 'ABSPATH' ) || exit;
 
