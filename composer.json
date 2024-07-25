@@ -2,7 +2,7 @@
     "name": "emoweb/book-cpt",
     "autoload": {
         "psr-4": {
-            "PadiabTheme\\": "includes/"
+            "BOOKCPT\\": "includes/"
         }
     },
     "authors": [
