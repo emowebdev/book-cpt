@@ -22,9 +22,14 @@
 
     abstract protected function init_properties();
 
-    protected function register()
+    public function register()
     {
         $this->init_properties();
         register_post_type($this->post_type, $this->args);
+    }
+
+    public function __construct()
+    {
+        add_action( 'init', [$this, 'register']);
     }
  }

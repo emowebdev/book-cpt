@@ -32,6 +32,7 @@ class Post_Type_Books extends Abstract_Post_Type_Register
        'capability_type' => 'post',
        'hierarchical' => true,
        'menu_position' => 5,
+       'menu_icon' =>'dashicons-book-alt',
        'taxonomies' => [ 'post_tag'],
        'can_export' => true,
        'supports' => ['title','editor','thumbnail','custom-fields', 'comments', 'excerpt'],
@@ -40,6 +41,6 @@ class Post_Type_Books extends Abstract_Post_Type_Register
    }
    public function __construct()
    {
-       $this->register();
+        parent::__construct();
    }
 }
