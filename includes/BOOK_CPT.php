@@ -1,5 +1,6 @@
 <?php
 use BookCPT\Interface_Classes_Init;
+use BookCPT\Post_Types\Install_Post_Types;
 
 defined( 'ABSPATH' ) || exit;
 
@@ -38,8 +39,7 @@ final class BOOK_CPT
 
     private function classes_init()
     {
-
-
+        $this->create_install_object(new Install_Post_Types());
     }
 
 	/**
@@ -56,5 +56,4 @@ final class BOOK_CPT
     {
         $this->classes_init();
     }
-
 }
